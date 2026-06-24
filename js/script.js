@@ -1,12 +1,3 @@
-var _____WB$wombat$assign$function_____=function(name){return (globalThis._wb_wombat && globalThis._wb_wombat.local_init && globalThis._wb_wombat.local_init(name))||globalThis[name];};if(!globalThis.__WB_pmw){globalThis.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
-let window = _____WB$wombat$assign$function_____("window");
-let self = _____WB$wombat$assign$function_____("self");
-let document = _____WB$wombat$assign$function_____("document");
-let location = _____WB$wombat$assign$function_____("location");
-let top = _____WB$wombat$assign$function_____("top");
-let parent = _____WB$wombat$assign$function_____("parent");
-let frames = _____WB$wombat$assign$function_____("frames");
-let opener = _____WB$wombat$assign$function_____("opener");
 function kswr_reanimate_block(t) {
     t.find(".kswr-animationblock").each(function() {
         var t = jQuery(this),
@@ -6608,10 +6599,6 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
         })
     }, t.sayenhotspot = o
 }(window, jQuery);
-}
-
-/*
-     FILE ARCHIVED ON 13:57:33 Apr 15, 2025 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 07:21:18 Jun 24, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 

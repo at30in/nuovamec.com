@@ -1,12 +1,3 @@
-var _____WB$wombat$assign$function_____=function(name){return (globalThis._wb_wombat && globalThis._wb_wombat.local_init && globalThis._wb_wombat.local_init(name))||globalThis[name];};if(!globalThis.__WB_pmw){globalThis.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
-let window = _____WB$wombat$assign$function_____("window");
-let self = _____WB$wombat$assign$function_____("self");
-let document = _____WB$wombat$assign$function_____("document");
-let location = _____WB$wombat$assign$function_____("location");
-let top = _____WB$wombat$assign$function_____("top");
-let parent = _____WB$wombat$assign$function_____("parent");
-let frames = _____WB$wombat$assign$function_____("frames");
-let opener = _____WB$wombat$assign$function_____("opener");
 (function($) {
 
     "use strict";
@@ -351,62 +342,17 @@ let opener = _____WB$wombat$assign$function_____("opener");
             
 
 
-            $('#toggle-theme-menu.toggle-menu-button').each(function(i) {
+            var mySlidebars = new slidebars();
+            mySlidebars.init();
 
+            $('#toggle-theme-menu.toggle-menu-button').on('click', function(e) {
+                e.preventDefault();
+                mySlidebars.toggle('slidebar-1');
+            });
 
-                var trigger = $(this);
-                var isClosed = true;
-
-
-
-                function showMenu() {
-
-
-
-                    $('#nav').addClass('navbar-scrolling-fixing');
-                    
-    
-
-                    if (trigger.hasClass("js-toggle-screen")) {
-
-                        $('#fixedMenu').delay(0).fadeIn(300);
-
-                    }
-
-                    trigger.addClass('is-open');
-                    isClosed = false;
-                }
-
-
-                function hideMenu() {
-                    $('#fixedMenu').fadeOut(100);
-                    $('#nav').removeClass('navbar-scrolling-fixing');
-                    trigger.removeClass('is-open');
-                    isClosed = true;
-                }
-
-
-
-
-                $('.fullmenu-close').on('click', function(e) {
-                    e.preventDefault();
-                    if (isClosed === true) {
-                        hideMenu();
-                    } else {
-                        hideMenu();
-                    }
-                });
-
-                trigger.on('click', function(e) {
-                    e.preventDefault();
-                    if (isClosed === true) {
-                        showMenu();
-                    } else {
-                        hideMenu();
-                    }
-                });
-
-
+            $('.js-toggle-mobile-slidebar').on('click', function(e) {
+                e.preventDefault();
+                mySlidebars.toggle('slidebar-5');
             });
             
             
@@ -564,30 +510,3 @@ let opener = _____WB$wombat$assign$function_____("opener");
 
 
 })(jQuery);
-
-
-
-
-}
-
-/*
-     FILE ARCHIVED ON 13:57:55 Apr 15, 2025 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:22:45 Jun 24, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  capture_cache.get: 0.561
-  captures_list: 0.584
-  exclusion.robots: 0.074
-  exclusion.robots.policy: 0.064
-  esindex: 0.011
-  cdx.remote: 311.611
-  LoadShardBlock: 105.091 (3)
-  PetaboxLoader3.datanode: 91.064 (4)
-  PetaboxLoader3.resolve: 209.587 (2)
-  load_resource: 211.755
-*/
